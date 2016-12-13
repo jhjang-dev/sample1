@@ -15,10 +15,6 @@ if(!$db){
 
 $sql = "select * from testa";
 $res = mysql_query($sql);
-if(!$res){
-	//die("Error");
-}
-while($row = mysql_fetch_array($res,MYSQL_ASSOC)){
-	print_r($row);
-}
+
+
 
