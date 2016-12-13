@@ -8,7 +8,7 @@ if(!$link){
 	die('Not connected : '. mysql_error());
 }
 $db = mysql_select_db($select_db,$link);
-
+test
 if(!$db){
 	die("Can't use test_db : " . mysql_error());
 }
