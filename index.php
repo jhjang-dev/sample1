@@ -8,13 +8,16 @@ if(!$link){
 	die('Not connected : '. mysql_error());
 }
 $db = mysql_select_db($select_db,$link);
-test
+
 if(!$db){
 	die("Can't use test_db : " . mysql_error());
 }
 
-$sql = "select * from test";
+$sql = "select * from testa";
 $res = mysql_query($sql);
+if(!$res){
+	//die("Error");
+}
 while($row = mysql_fetch_array($res,MYSQL_ASSOC)){
 	print_r($row);
 }
